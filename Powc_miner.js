@@ -3,10 +3,10 @@ const path = require('path');
 const ethers = require('ethers');
 
 // Set up your Polygon node information for connecting to the Polygon network
-const provider = new ethers.providers.JsonRpcProvider('Polygon_network_RPC');
+const provider = new ethers.providers.JsonRpcProvider('https://polygon.llamarpc.com');
 // Your smart contract address and private key
 const contractAddress = '0x4b7e197e8b6807c4ffb52ca7f0b56095d03c0b47';
-const privateKey = 'your_private_key'; // Replace with your private key
+const privateKey = '5b409aadef202d8989d4cf0d17e454db6b9312347a113c89de4401aabc72bd4d'; // Replace with your private key
 
 // Read the ABI (Application Binary Interface) of the smart contract
 const abiPath = path.join(__dirname, 'abi', 'abi.json');
